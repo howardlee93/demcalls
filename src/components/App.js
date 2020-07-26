@@ -10,17 +10,27 @@ import Other from './other';
 
 import Modal from './modal';
 
+import landing from '../assets/landing.jpeg';
 
 
 //test
 
 function App() {
+
+  const Landing = () =>{
+    return(
+
+      <img src={landing} alt="landing"/>
+    )
+  };
+
+
   return (
     <div className="App">
       <header className="App-header">
 
       <Modal/>
-      <h1> End qualified immunity</h1>
+      <h1> <NavLink to="/">End qualified immunity</NavLink> </h1>
       <p> Contact your representatives about ending qualified immunity, a legal doctrine that enables police brutality 
       and hinders public accountability</p>
   
@@ -38,6 +48,8 @@ function App() {
       </header>
 
       <Switch>
+
+        <Route exact path="/" component={Landing}/>
 
         <Route path="/about" component={About}/>
 
