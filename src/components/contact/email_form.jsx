@@ -58,7 +58,7 @@ class EmailForm extends React.Component{
 			button:{
 				fontSize:'25px',
 				borderRadius: '8px',
-				width:'10%',
+				width:'20%',
 
 			}
 			
